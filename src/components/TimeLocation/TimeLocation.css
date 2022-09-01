@@ -30,4 +30,10 @@ margin-bottom: 0.7rem;
   .time_container {
     align-items: center;
   }
+  .time_wrapper p {
+    font-size: 0.7rem;
+  }
+  .location_wrapper p {
+    font-size: 1.5rem;
+  }
 }
