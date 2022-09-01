@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Fancy Weather Application powered by OPENWEATHERMAP API      
+![Weather Application](weather-app-screenshot.jpg?raw=true "Live Weather Application")
+### <a href="https://react-resume-template.herokuapp.com/">LIVE DEMO</a> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This is a ReactJS based weather application using the OpenWeatherMap Api. The application shows the current weather and it's details (City, Country, Feels Like, Humidity, Wind Speed, Pressure, Wind Degrees, LocalTime). Also shows the forcast weather (up to 7 days ahead) of the current day and a line chart which provides the max and mix temperature for the next 7 days. I've made this application into isolated React components with their own styles and structure for maintainance purposes. Data is fed directly from the API. This means that its data is fully acurrate acording the API.
 
-## Available Scripts
+## Installation Process!
+### 1. Make sure you have what you need
+To build this website, you will need to have Node >=16 downloaded and installed on your machine. If you don't already have it, you can get it <a href="https://nodejs.org/en/download/">HERE</a>
+### 2. Build a Create-React-App
+Next, you will build the initial application using a handy tool called Create-React-App by using the following command. `npx create-react-app .` in emty folder. This allows you to get up and running with a fresh React App. Go <a href="https://reactjs.org/docs/installation.html">HERE</a> to get started.
+When the app building is finished run `cd yourappname` and run `npm start` to test it out.
+Hit ctrl+c in the terminal when you want to stop the server that the above command starts.
+For this project we will also need to install Luxon's Librady, Chart.JS and React Icons do this by running `npm i luxon@2.4.0` , `npm install --save`, `chart.js react-chartjs-2`, `npm install react-icons --save` in your terminal while inside your project folder. YOU MUST RUN THESE COMMANDS.
+### 3. Download the template
+Once you have a React app up and running by following the steps in the above link, download my code by hitting the green "clone or download" button above and hit download zip. The next step is to replace the files you downloaded with the files and folders of your newly built pp. If you run `npm start` now, you should see that your app renders the same as the one at the live demo link above.
+### 6. Make any styling changes you would like
+Feel free to make any changes in the style sheets, it's easy to customize
+### 7. Enjoy
 
-In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Credits
+##### Open Weather Map API
+<a href="https://openweathermap.org/">OpenWeathermap.org</a>

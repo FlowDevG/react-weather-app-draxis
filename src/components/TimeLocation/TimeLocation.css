@@ -1,0 +1,33 @@
+.time_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;} 
+.time_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.time_wrapper p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 200;
+}
+.location_wrapper {
+display: flex;
+align-items: center;
+margin-bottom: 0.7rem;
+}
+.location_wrapper p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px cyan;
+}
+@media screen and (max-width: 680px) {
+  .time_container {
+    align-items: center;
+  }
+}

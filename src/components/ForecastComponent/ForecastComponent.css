@@ -1,0 +1,94 @@
+.forecast_wrapper_title {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  margin-top: 1.5rem;
+}
+.forecast_wrapper_title p {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.forecast_wrapper_seperator {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.forecast_wrapper_details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.forecast_wrapper_details_item {
+  display: flex;
+  background-color: rgba(0,0,0,0.4);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.forecast_wrapper_details_item:hover {
+  transform: scale(1.01);
+}
+.forecast_wrapper_details_item p {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+.forecast_wrapper_details_item p:first-child {
+  color: cyan;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0.5rem;
+}
+.forecast_wrapper_details_item p:first-child:hover {
+  color: #fff;
+}
+.forecast_wrapper_details_item span {
+  font-weight: 500;
+  color: cyan;
+  margin-top: 13px;
+}
+.forecast_wrapper_details_item img {
+  width: 3rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+.forecast_container_grid_bottom_current {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.forecast_container_grid_bottom_min_max {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.forecast_container_grid_bottom_min_max span {
+  font-weight: 300;
+  flex-wrap: wrap;
+  display: flex;
+  color: #fff;
+}
+/* Responsive Css*/
+@media screen and (max-width: 1300px) {
+  .forecast_wrapper_details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;  
+  }
+  .forecast_wrapper_details_item {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .forecast_wrapper_details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

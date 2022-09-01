@@ -1,0 +1,125 @@
+.weather_status {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+.weather_status p {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+}
+.weather_status p:hover {
+  color: cyan;
+}
+.weather_current_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: #fff;
+}
+.weather_current_img {
+  width: 8rem;
+}
+.weather_current_img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  transition-duration: 1s;
+}
+.weather_current_info p {
+  color: cyan;
+  font-size: 5rem;
+  text-shadow: 1px 1px 10px #fff;
+  line-height: 1rem;
+}
+.weather_current_info p:hover {
+  color: black;
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+  transition-duration: 1s;
+}
+.weather_current_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(0,0,0,0.4);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.weather_current_details:hover {
+  transform: scale(1.01);
+}
+.weather_current_details_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.weather_current_details_text {
+  margin-left: 0.2rem;
+  font-weight: 500;
+}
+.weather_current_details_icons {
+  margin-right: 0.3rem;
+  color: cyan;
+}
+.weather_current_day_overview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.weather_current_day_overview p {
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+}
+.weather_current_day_overview span {
+  font-weight: 500;
+  margin-left: 0.2rem;
+}
+.weather_current_day_overview_seperator {
+  color: cyan;
+}
+
+/* Responsive Css*/
+@media screen and (max-width: 680px) {
+  .weather_current_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .weather_current_info img {
+    margin: 0;
+    padding: 0;
+  }
+  .weather_current_info p {
+    margin: 1rem;
+  }
+  .weather_current_details {
+    margin: 1rem;
+  }
+  .weather_current_day_overview  {
+    flex-direction: column;
+  }
+  .weather_status {
+    justify-content: center;
+  }
+}
